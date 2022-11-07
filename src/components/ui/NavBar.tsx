@@ -19,14 +19,6 @@ const NavBar = () => {
               <i className='bi bi-search'></i>
             </Link>
           </li>
-
-          {isAuth && (
-            <li className='nav-item' style={{ marginRight: '20px' }}>
-              <Link to='/favourites' className='nav-link'>
-                <i className='bi bi-heart'></i>
-              </Link>
-            </li>
-          )}
         </ul>
         {isAuth ? (
           <NavProfile />
